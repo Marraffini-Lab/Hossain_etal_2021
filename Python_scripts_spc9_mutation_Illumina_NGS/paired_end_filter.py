@@ -10,8 +10,8 @@ from Bio.Seq import Seq
 from Bio.SeqUtils import nt_search
 
 # enter .fastq file names for the input files:
-fastq_1 = open("AH01_S1_L001_R1_001.fastq", "r")
-fastq_2 = open("AH01_S1_L001_R2_001.fastq", "r")
+fastq_1 = open("Fig3F_spc9_mutations_dinB_ecoli_R1.fastq", "r")
+fastq_2 = open("Fig3F_spc9_mutations_dinB_ecoli_R2.fastq", "r")
 
 # enter .txt file name for the output file:
 output = open("Spc9MutSeq_S1_L001_R1_R2_combined_quality.txt", "w")
