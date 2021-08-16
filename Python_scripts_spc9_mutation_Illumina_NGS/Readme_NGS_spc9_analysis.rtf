@@ -10,8 +10,9 @@ available on NCBI SRA: BioProject PRJNA754816
 The FASTQ reads are PCR amplified DNA sequences of spc9 target sequences in escaper phage plaques. 
 First run paired_end_filter.py to quality filter paired-end 75 bp Illumina reads into a single text file for spc9 mutation analysis.
 Then run spc9_analyzer.py on the outputted file from above to generate Microsoft Excel files for each sample with the outputted escape mutation data.
-This script compares the FASTQ reads (bottom strand reads only) to the reverse complement of the spc9 target phage DNA sequence: spc9_pcr_rev_comp.fa
-The script then records and counts mutations in the FASTQ reads
+This Python script compares the FASTQ reads (bottom strand reads only) for each primer barcoded PCR sample
+to the reverse complement of the spc9 target phage DNA sequence (spc9_pcr_rev_comp.fa).
+The script then records and counts mutations in the FASTQ reads.
 The last column ('Normalized Count') is outputted as the normalized mutated reads (y-axis) in Figure 3F and other related graphs (Figures 3A-C, S4C and S4D).
 Figures were generated using GraphPad Prism 9.
 
