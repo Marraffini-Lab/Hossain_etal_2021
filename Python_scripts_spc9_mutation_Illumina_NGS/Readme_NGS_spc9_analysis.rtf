@@ -1,12 +1,14 @@
-Custom Python scripts for analysis of next generation sequencing of spc9 mutations from pooled barcoded PCR of escaper plaques from lawns of spc9-targeting bacteria:\
+Custom Python scripts for analysis of next generation sequencing of spc9 mutations from pooled barcoded PCR of escaper plaques
+from lawns of spc9-targeting bacteria:
+
 Code here is written specifically for data in Hossain et al., 2021 (Cell Host & Microbe) Figure 3F.
-See the paired-end Illumina MiSeq FASTQ files:
+See the 75 bp paired-end Illumina MiSeq FASTQ files:
 Fig3F_spc9_mutations_dinB_ecoli_R1.fastq
 Fig3F_spc9_mutations_dinB_ecoli_R2.fastq
 available on NCBI SRA: BioProject PRJNA754816
 
 The FASTQ reads are PCR amplified DNA sequences of spc9 target sequences in escaper phage plaques. 
-First run paired_end_filter.py to quality filter paired end reads into a single text file for spc9 mutation analysis.
+First run paired_end_filter.py to quality filter paired-end 75 bp Illumina reads into a single text file for spc9 mutation analysis.
 Then run spc9_analyzer.py on the outputted file from above to generate Microsoft Excel files for each sample with the outputted escape mutation data.
 This script compares the FASTQ reads (bottom strand reads only) to the reverse complement of the spc9 target phage DNA sequence: spc9_pcr_rev_comp.fa
 The script then records and counts mutations in the FASTQ reads
